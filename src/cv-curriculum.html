@@ -1,4 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="cv-bloc.html">
 
 <dom-module id="cv-curriculum">
@@ -12,8 +13,12 @@
             }
         </style>
 
-        <cv-bloc date="2015" title="View one" description="Ut labores minimum atomorum pro. Laudem tibique ut has."> </cv-bloc>
+        <iron-ajax auto url="../assets/json/curriculum.json" handle-as="json" last-response="{{curriculum}}"></iron-ajax>
 
+        <template is="dom-repeat" items="{{curriculum}}">
+            <cv-bloc date="{{item.date}}" title="{{item.title}}"> </cv-bloc>
+        </template>
+        
     </template>
 
     <script>
