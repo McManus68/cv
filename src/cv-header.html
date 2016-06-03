@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+
+<dom-module id="cv-header">
+
+    <template>
+        <style>
+
+            app-toolbar {
+                --app-toolbar-font-size: 26px;
+            }
+
+        </style>
+
+        <app-toolbar>
+             <paper-icon-button icon="menu"></paper-icon-button>
+            <div title>Ingénieur Java / J2EE / Web - 10 années d'expérience</div>
+        </app-toolbar>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'cv-header'
+        });
+    </script>
+
+</dom-module>

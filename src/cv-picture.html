@@ -1,0 +1,25 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+
+<dom-module id="cv-picture">
+
+    <template>
+        <style>
+            #main-photo {
+                width: 256px;
+                height: 256px;
+                background: #ddd;
+            }
+        </style>
+
+        <iron-image sizing="cover" alt="Emmanuel TARROU" src="../images/me.jpg" id="main-photo"></iron-image>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'cv-picture'
+        });
+    </script>
+
+</dom-module>
