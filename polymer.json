@@ -2,9 +2,7 @@
     "entrypoint": "index.html",
     "shell": "src/cv-container.html",
     "fragments": [
-        "src/cv-view1.html",
-        "src/cv-view2.html",
-        "src/cv-view3.html",
-        "src/cv-new-view.html"
+        "src/cv-curriculum.html",
+        "src/cv-experience.html"
     ]
 }

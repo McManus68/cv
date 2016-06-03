@@ -4,13 +4,12 @@
 <link rel="import" href="../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
 <link rel="import" href="../bower_components/app-layout/app-drawer/app-drawer.html">
 <link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
-<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
 <link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
-<link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 <link rel="import" href="cv-picture.html">
 <link rel="import" href="cv-header.html">
+<link rel="import" href="cv-page-selector.html">
 <link rel="import" href="my-icons.html">
 
 <dom-module id="cv-container">
@@ -23,33 +22,6 @@
                 --app-primary-color: #4285f4;
                 --app-secondary-color: black;
             }
-
-            .drawer-list {
-                margin: 0 20px;
-            }
-
-            .drawer-list a {
-                display: block;
-                padding: 0 16px;
-                line-height: 40px;
-                text-decoration: none;
-                color: var(--app-secondary-color);
-            }
-
-            .drawer-list a.iron-selected {
-                color: black;
-                font-weight: bold;
-            }
-
-            .drawer-list a.subroute {
-                padding-left: 32px;
-            }
-
-            app-header {
-                background-color: var(--app-primary-color);
-                color: #fff;
-            }
-
         </style>
 
         <app-location route="{{route}}"></app-location>
@@ -60,27 +32,17 @@
             <!-- Drawer content -->
             <app-drawer>
                 <cv-picture></cv-picture>
-                <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-                    <a name="view1" href="/view1">Formation</a>
-                    <a name="view2" href="/view2">View Two</a>
-                    <a name="view3" href="/view3">View Three</a>
-                    <a name="new-view" href="/new-view">New View</a>
-                </iron-selector>
+                <cv-page-selector></cv-page-selector>
             </app-drawer>
 
             <!-- Main content -->
             <app-header-layout has-scrolling-region>
 
-                <app-header condenses reveals effects="waterfall">
-                    <cv-header><cv-header>
-                    <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-                </app-header>
+                <cv-header></cv-header>
 
                 <iron-pages role="main" selected="[[page]]" attr-for-selected="name">
-                    <cv-view1 name="view1"></cv-view1>
-                    <cv-view2 name="view2"></cv-view2>
-                    <cv-view3 name="view3"></cv-view3>
-                    <cv-new-view name="new-view"></cv-new-view>
+                    <cv-curriculum name="curriculum"></cv-curriculum>
+                    <cv-experience name="experience"></cv-experience>
                 </iron-pages>
 
             </app-header-layout>
@@ -109,7 +71,7 @@
             ],
 
             _routePageChanged: function(page) {
-                this.page = page || 'view1';
+                this.page = page || 'curriculum';
             },
 
             _pageChanged: function(page) {
