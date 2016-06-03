@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="cv-bloc.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="cv-bloc-experience.html">
 
 <dom-module id="cv-experience">
 
@@ -12,7 +13,11 @@
             }
         </style>
 
-        <cv-bloc date="2015" title="View Two" description="Ea duis bonorum nec, falli paulo aliquid ei eum."> </cv-bloc>
+        <iron-ajax auto url="../assets/json/experience.json" handle-as="json" last-response="{{experience}}"></iron-ajax>
+
+        <template is="dom-repeat" items="{{experience}}">
+            <cv-bloc-experience date="{{item.date}}" company="{{item.company}}" description="{{item.description}}"> </cv-bloc-curriculum>
+        </template>
 
     </template>
 
