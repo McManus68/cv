@@ -1,0 +1,145 @@
+[{
+        "date": "Depuis Novembre 2013",
+        "company": "ITK",
+        "description": "Développement sur des applications web qui accompagnent les viticulteurs et agriculteurs du monde agricole",
+        "skills": [{
+            "name": "Java",
+            "type": "BACK"
+        }, {
+            "name": "Hibernate",
+            "type": "BACK"
+        }, {
+            "name": "Angular JS",
+            "type": "FRONT"
+        }, {
+            "name": "Spring Core/Mvc/Data/Batch/Boot",
+            "type": "BACK"
+        }, {
+            "name": "Maven",
+            "type": "DEVOPS"
+        }, {
+            "name": "CSS",
+            "type": "FRONT"
+        }, {
+            "name": "MySQL",
+            "type": "DB"
+        }, {
+            "name": "GiT",
+            "type": "DEVOPS"
+        }, {
+            "name": "Junit",
+            "type": "BACK"
+        }, {
+            "name": "Cassandra",
+            "type": "DB"
+        }]
+    }, {
+        "date": "Novembre 2012 - Septembre 2013",
+        "company": "STERIA",
+        "description": "Développement / TMA sur une application de GED basée sur Documentum",
+        "skills": [{
+            "name": "Documentum",
+            "type": "BACK"
+        }, {
+            "name": "DQL",
+            "type": "DB"
+        }, {
+            "name": "Java",
+            "type": "BACK"
+        }, {
+            "name": "Maven",
+            "type": "DEVOPS"
+        }, {
+            "name": "SQL Server",
+            "type": "DB"
+        }]
+    }, {
+        "date": "Mars 2009 - Octobre 2012",
+        "company": "ITESOFT",
+        "description": "Développement / paramétrage sur des applications de dématérialisation de factures fournisseurs. Développements sur une application web de GED pour l'archivage / circulation des documents sur des workflows spécifiques",
+        "skills": [{
+            "name": "Java",
+            "type": "BACK"
+        }, {
+            "name": "JavaScript",
+            "type": "FRONT"
+        }, {
+            "name": "XSL",
+            "type": "FRONT"
+        }, {
+            "name": "JSP",
+            "type": "FRONT"
+        }, {
+            "name": "MySQL",
+            "type": "DB"
+        }, {
+            "name": "Oracle",
+            "type": "DB"
+        }, {
+            "name": "SQL Server",
+            "type": "DB"
+        }, {
+            "name": "Tomcat",
+            "type": "DEVOPS"
+        }, {
+            "name": "Birt",
+            "type": "BACK"
+        }]
+    }, {
+        "date": "Avril 2008 – Février 2009",
+        "company": "CONSORT DEVLINE",
+        "description": "Participation à la refonte d’une application de gestion des FRET en utilisant le Framework JSF",
+        "skills": [{
+            "name": "Java",
+            "type": "BACK"
+        }, {
+            "name": "JSF",
+            "type": "FRONT"
+        }, {
+            "name": "Hibernate",
+            "type": "BACK"
+        }, {
+            "name": "JSP",
+            "type": "FRONT"
+        }, {
+            "name": "SQL Server",
+            "type": "DB"
+        }, {
+            "name": "ClearCase",
+            "type": "DEVOPS"
+        }, {
+            "name": "Struts",
+            "type": "FRONT"
+        }, {
+            "name": "ClearCase",
+            "type": "DEVOPS"
+        }]
+    }, {
+        "date": "Avril 2007 – Avril 2008",
+        "company": "UMR LISAH",
+        "description": "Conception de l'IHM pour une plate-forme de modélisation d’événements hydrologiques en collaboration avec une équipe de chercheurs en agronomie",
+        "skills": [{
+            "name": "Java",
+            "type": "BACK"
+        }, {
+            "name": "Swing",
+            "type": "FRONT"
+        }, {
+            "name": "Geotools",
+            "type": "FRONT"
+        }, {
+            "name": "JGraph",
+            "type": "FRONT"
+        }, {
+            "name": "JFreeChart",
+            "type": "FRONT"
+        }, {
+            "name": "SVN",
+            "type": "DEVOPS"
+        }, {
+            "name": "Junit",
+            "type": "DEVOPS"
+        }]
+    }
+
+]
